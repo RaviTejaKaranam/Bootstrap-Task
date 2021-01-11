@@ -1,0 +1,91 @@
+/* bottom border for the required sections  */
+.date-location,
+.subject,
+.border-bottom {
+  border-bottom: 1px solid black !important;
+}
+/* border at the top for all the required sections  */
+.border-top {
+  border-top: 1px solid black !important;
+}
+/* The main heading section  */
+.heading {
+  letter-spacing: 12px;
+  font-size: 80px;
+}
+/* Date on the articles and the designing the background using clip-path  */
+.date {
+  background-color: #800000;
+  color: #fff;
+  clip-path: polygon(0 0, 95% 0, 100% 100%, 0% 100%);
+}
+/* aligning text of each article  */
+article {
+  text-align: justify;
+}
+.article-heading,
+.state-article-heading {
+  font-size: 20px;
+}
+/* Adjusting the height of the main article  */
+.hero-article {
+  height: 75vh;
+}
+/* adjusting the height of the state edition article  */
+.edition-hero-article {
+  height: 70vh;
+}
+/* Sub article in the main edition of the page */
+.main-sub-article {
+  line-height: 30px;
+  font-size: 25px;
+  color: #800000;
+  letter-spacing: 1.5px;
+}
+/* adjusting image height of sub articles  */
+.sub-images {
+  height: 35vh;
+}
+/* placing the date above the image in the article   */
+.sub-date {
+  position: relative;
+  top: 10px;
+  z-index: 9999;
+}
+/* pushing the nav bar links to the right  */
+.ml-auto {
+  margin-left: auto !important;
+}
+/* header and footer styles  */
+.header,
+.footer {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: bold;
+}
+/* Media Queries  */
+/* The font size and the margin of the Main Heading 'NEWS WEEK DAILY' has 
+  to be adjusted according to the screen width  */
+@media (max-width: 1199px) {
+  .heading {
+    font-size: 60px;
+  }
+}
+@media (max-width: 991px) {
+  .heading {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .heading {
+    font-size: 30px;
+    letter-spacing: 4px;
+  }
+}
+@media (max-width: 529px) {
+  .heading {
+    font-size: 25px;
+    letter-spacing: 4px;
+    margin-bottom: 5px;
+  }
+}
